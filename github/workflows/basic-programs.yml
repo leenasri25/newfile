@@ -1,0 +1,37 @@
+name: Manual Basic Programs Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-basic-programs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
+
+      - name: Print Date
+        run: date
+
+      - name: Arithmetic Operations
+        run: |
+          a=10
+          b=5
+          echo "Addition: $((a+b))"
+          echo "Subtraction: $((a-b))"
+          echo "Multiplication: $((a*b))"
+          echo "Division: $((a/b))"
+
+      - name: Loop Example
+        run: |
+          for i in 1 2 3 4 5
+          do
+            echo "Number: $i"
+          done
+
+      - name: System Information
+        run: |
+          uname -a
+          df -h
+          free -m
