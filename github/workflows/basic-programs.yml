@@ -1,4 +1,4 @@
-name: Manual Basic Programs Pipeline ,,,,,
+name: Manual Basic Programs Pipeline to test the pr
 
 on:
   workflow_dispatch:
